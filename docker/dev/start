@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+# Apply migrations if has new one.
+echo "Running migrations..."
+python manage.py migrate
+
+echo "Starting runserver"
+exec python manage.py runserver 0.0.0.0:8000

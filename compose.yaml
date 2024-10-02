@@ -1,0 +1,14 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: ./docker/dev/Dockerfile
+    image: palindrome_local
+    container_name: palindrome_local
+    volumes:
+      - .:/app:z
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    command: /start
