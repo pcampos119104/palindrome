@@ -1,14 +1,22 @@
 services:
+# The service to be created on docker
   web:
+    # how to build the image for this service
     build:
+      # Where is the directory to work on...
       context: .
+      # ... with what Dockerfile instructions
       dockerfile: ./docker/dev/Dockerfile
     image: palindrome_local
     container_name: palindrome_local
+    # Make the code accessible for the container.
     volumes:
       - .:/app:z
+    # your .env based on .env.template
     env_file:
       - .env
+    # Open the port, so we can access localhost:8000
     ports:
       - "8000:8000"
+    # The bash file to execute, the one created above and added to Dockerfile
     command: /start
