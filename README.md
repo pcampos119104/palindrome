@@ -1,6 +1,6 @@
 # Palindrome project
 
-Project used to explain my view on a django project architecture
+Project used to explain my view on a django project architecture, explained on my [series of posts](https://dev.to/pcampos119104/django-project-setup-part-1-2e7a)
 
 ## Tools, libs, etc. Some time related files.
 
