@@ -19,6 +19,7 @@ Versions on Poetry.
     - .env
 - [Just](https://just.systems/) encapsulate commands for easier use
     - justfile
+- [psycopg](https://www.psycopg.org/) Python adapter for Postgres
 
 ## Dev environment setup
 
