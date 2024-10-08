@@ -14,3 +14,12 @@ runserver:
 mng command:
   docker compose run --rm web python manage.py {{command}}
 
+# Run Ruff for fix errors
+format:
+  docker compose run --rm web ruff check --fix
+  docker compose run --rm web ruff format
+
+# Run the tests
+test:
+  docker compose run --rm web ruff check
+  docker compose run --rm web pytest
