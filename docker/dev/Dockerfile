@@ -13,8 +13,15 @@ ENV PYTHONUNBUFFERED 1
 
 # update the alpine linux
 RUN apk update
-# install bash on image, could be the ash but bash it's more agnostic
+# install bash on image, could be the ash but the bash is more agnostic
 RUN apk add --no-cache bash
+# install npm on image
+RUN apk add --no-cache npm
+
+# tailwind stuff
+COPY package*.json ./
+# use the json to install the Tailwind
+RUN npm install
 
 # Copy our poetry artifacts to the building image
 COPY poetry.lock pyproject.toml /app

@@ -1,3 +1,4 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import View
 
@@ -11,3 +12,10 @@ class HomeView(View):
 
     def get(self, request, *args, **kwargs):
         return render(request, 'base/home.html')
+
+
+def htmx(request):
+    """
+    A simple htmx view that return a partial html.
+    """
+    return HttpResponse('<span id="click-test">HTMX is working</span>')
