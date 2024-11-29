@@ -10,6 +10,10 @@ build:
 runserver:
   docker compose up --build
 
+# Enter in the container shell
+shell:
+  docker compose run --rm web sh
+
 # Run manage.py inside the container
 mng command:
   docker compose run --rm web python manage.py {{command}}

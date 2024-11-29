@@ -235,3 +235,4 @@ fabric.properties
 # local files for each dev
 /extras
 /extras/local/
+/node_modules/
