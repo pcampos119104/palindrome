@@ -1,6 +1,6 @@
 from django.urls import path
 
-from palindromo.base.views import HomeView, htmx
+from palindrome.base.views import HomeView, htmx
 
 app_name = 'base'
 urlpatterns = [

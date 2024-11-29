@@ -1,5 +1,5 @@
 """
-WSGI config for palindromo project.
+WSGI config for palindrome project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'palindromo.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'palindrome.settings')
 
 application = get_wsgi_application()

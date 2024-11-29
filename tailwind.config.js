@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-        "./palindromo/templates/**/*.{html,js}",
-        "./palindromo/static/**/*.{html,js}",
+        "./palindrome/templates/**/*.{html,js}",
+        "./palindrome/static/**/*.{html,js}",
     ],
     theme: {
         extend: {},

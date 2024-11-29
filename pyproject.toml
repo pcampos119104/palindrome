@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "palindromo"
+name = "palindrome"
 version = "0.1.0"
 description = ""
 authors = ["pcampos <pcampos119104@gmail.com>"]
@@ -24,7 +24,7 @@ build-backend = "poetry.core.masonry.api"
 
 # Configurations for pystest
 [tool.pytest.ini_options]
-DJANGO_SETTINGS_MODULE = "palindromo.settings"
+DJANGO_SETTINGS_MODULE = "palindrome.settings"
 
 # -- find the tests:
 python_files = ["test_*.py", "*_test.py", "testing/python/*.py"]
