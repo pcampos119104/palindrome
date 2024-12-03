@@ -20,6 +20,9 @@ Versions on Poetry.
 - [Just](https://just.systems/) encapsulate commands for easier use
     - justfile
 - [psycopg](https://www.psycopg.org/) Python adapter for Postgres
+- [AlpineJS](https://alpinejs.dev/) JavaScript Framework based on Vue
+- [TailwindCSS](https://tailwindcss.com/) CSS Framework
+- [HTMX](https://htmx.org/) htmx give access to AJAX, CSS Transitions, WebSockets and Server Sent Events directly from HTML
 
 ## Dev environment setup
 
