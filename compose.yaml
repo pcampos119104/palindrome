@@ -15,9 +15,10 @@ services:
     # your .env based on .env.template
     env_file:
       - .env
-    # Open the port in localhost:8000 for external access
+    # Open the port in localhost:8000 and 2718 for external access
     ports:
       - "8000:8000"
+      - "2718:2718" # marimo
     # Only start this image after postgres
     depends_on:
       - postgres

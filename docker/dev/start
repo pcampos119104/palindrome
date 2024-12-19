@@ -8,6 +8,12 @@ set -o nounset
 echo "Running migrations..."
 python manage.py migrate
 
+# --no-token means that the page won't ask for the generate token for access
+# --headless because we are going to access the marimo from outside of the container
+# &> /dev/null don't print the output on the console
+echo "Starting marimo"
+exec marimo edit --host 0.0.0.0 -p 2718 --no-token --headless &> /dev/null &
+
 # -i the input.css for some tailwind directives or pure css,
 # it will be added to the -o output.css in the
 # tailwind processing, --watch=always is the hot reload.
