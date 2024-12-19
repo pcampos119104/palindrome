@@ -19,6 +19,7 @@ django-browser-reload = "^1.17.0"
 pytest = "^8.3.3"
 pytest-django = "^4.9.0"
 ruff = "^0.6.9"
+marimo = "^0.9.30"
 
 [build-system]
 requires = ["poetry-core"]

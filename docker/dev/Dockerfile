@@ -15,8 +15,11 @@ ENV PYTHONUNBUFFERED 1
 RUN apk update
 # install bash on image, could be the ash but the bash is more agnostic
 RUN apk add --no-cache bash
-# install npm on image
+# install npm on image for tailwind
 RUN apk add --no-cache npm
+
+# for psutil, a dependencie of marimo
+RUN apk add --no-cache gcc python3-dev musl-dev linux-headers
 
 # tailwind stuff
 COPY package*.json ./
